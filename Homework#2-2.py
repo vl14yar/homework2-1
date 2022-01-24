@@ -3,7 +3,7 @@ given_string = '    i am gonna have my super power tomorrow morning so i am head
 x=given_string.upper()
 print(x)
 
-x=given_string.rstrip(" ")
+x=given_string.strip(" ")
 print(x)
 
 x=given_string.lower()
