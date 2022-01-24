@@ -36,7 +36,9 @@ elif action == '/':
     first_value = input("Enter first value: ")
     if first_value.isdigit():
         second_value = input("Enter second value: ")
-        if second_value.isdigit():
+        if second_value == "0":
+            print("You can't divide by zero.")
+        elif second_value.isdigit():
             print(f"{first_value} / {second_value} = {int(first_value) / int(second_value)}")
         else:
             print("Please, enter digit!")
