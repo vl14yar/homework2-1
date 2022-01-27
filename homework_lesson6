@@ -1,0 +1,26 @@
+# task 2
+a = [1, 9, 37, 24]
+b = sum(a)
+print(sum(a))
+# task 3
+given_list = [False, 0, "str", "123", "hello", "%", 1.2, 1]
+index = 0
+while True:
+    if index == len(given_list):
+        break
+    if type(given_list[index]) == str:
+        index += 1
+        continue
+    print(type(given_list[index]))
+    index += 1
+# task 4
+a = [5, 2, 15, 4]
+b = [3, 15, 5]
+c = []
+print(min(a), min(b), max(a), max(b))
+for i in a:
+    for j in b:
+        if i == j:
+            c.append(i)
+            break
+print(c)
