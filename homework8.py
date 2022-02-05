@@ -51,11 +51,11 @@ def validate():
     while True:
         password = input("Введіть пароль: ")
         if len(password) < 8:
-            print("Ваш пароль повинен мати щонайменше 8 символів")
-        elif re.search('[0-9]',password) is None:
+            print("Ваш пароль повинний мати щонайменше 8 символів")
+        elif re.search('[0-9]', password) is None:
             print("Ваш пароль повинний мати хоча б одну цифру")
-        elif re.search('[A-Z]',password) is None:
-            print("Ваш пароль має починатися з великої літери")
+        elif re.search('[A-Z]', password) is None:
+            print("Ваш пароль повинний мати хоча б одну велику літеру")
         else:
             print("Пароль створено. Гарного користування!")
             break
