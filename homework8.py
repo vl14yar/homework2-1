@@ -17,8 +17,9 @@ for i in l1:
             break
 print(c)
 
-# # task 2.1
 l3 = [random.randint(0, 100) for i in range (10)]
+
+# # task 2.1
 
 index = 0
 while index < 10:
