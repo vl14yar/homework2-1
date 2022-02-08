@@ -30,7 +30,8 @@ for number in l3:
     print(number)
 
 # task 2.3
-l4 = [number for number in l3]
+random_list = [random.randint(0, 100) for i in range (10)]
+l4 = [number for number in random_list]
 print(l4)
 
 # task 3.2
@@ -56,6 +57,8 @@ def validate():
             print("Ваш пароль повинний мати хоча б одну цифру")
         elif re.search('[A-Z]', password) is None:
             print("Ваш пароль повинний мати хоча б одну велику літеру")
+        elif re.search('[a-z]', password) is None:
+            print("Ваш пароль повинний мати хоча б одну маленьку літеру")    
         else:
             print("Пароль створено. Гарного користування!")
             break
