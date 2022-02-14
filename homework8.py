@@ -17,16 +17,15 @@ for i in l1:
             break
 print(c)
 
-l3 = [random.randint(0, 100) for i in range (10)]
-
 # # task 2.1
-
+l3 = [random.randint(0, 100) for i in range (10)]
 index = 0
 while index < 10:
     print(l3[index])
     index += 1
 
 # task 2.2
+l3 = [random.randint(0, 100) for i in range (10)]
 for number in l3:
     print(number)
 
